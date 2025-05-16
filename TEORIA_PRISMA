@@ -1,0 +1,14 @@
+¿Que es PRISMA?
+    Prisma es un ORM Open Source que se puede utilizar con JS y TS(ts anda muy bien en prisma)
+    Cuenta con 3 tools: 
+
+    -Prisma Client: Es un Query Builder, herrramienta que permite consultar la db, soporta Node y TS,
+        se puede utilizar en next sin problemas.
+
+    -Prisma Migrate: Utilizado para definir Tablas y realaciones, se encarga de generar toda la db, 
+        ademas se utliza para migraciones y mas.
+
+    -Prisma Studio:No es Open Source, solo se puede ocupar en desarrollo y localmente, es para ver tu db 
+
+    Prisma soporta:
+    MariaDB - SQL -MySQL -PostgreSQL -MongoDB

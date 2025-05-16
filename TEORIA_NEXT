@@ -1,0 +1,10 @@
+Data Fetching
+    El Data fet se puede hacer de 4 maneras en Next:
+
+    1_ En el Servidor con Fetch()
+
+    2_ En el servidor con un ORM o consultas SQL
+
+    3_ En el cliente con un Route Handler y una peticion de tipo GET
+
+    4_ En el cliente con ReactQuery, Axios, SWR u otas
