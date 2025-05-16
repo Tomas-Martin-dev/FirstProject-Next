@@ -8,3 +8,11 @@ Data Fetching
     3_ En el cliente con un Route Handler y una peticion de tipo GET
 
     4_ En el cliente con ReactQuery, Axios, SWR u otas
+
+
+Routing Dinamico
+    En los casos que se quiera acceder a los datos de la db leyendo la url para pasar informacion,
+        con App Router la forma de generar el Routing Dinamico es con carpetas y un nombre entre corchetes
+        Ejp: 
+            folder father = products
+            folder child = [id] => esta carpeta seria el segmento dinamico de la ruta "products"

@@ -6,14 +6,13 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         <>
             <div className="md:flex ">
                 <OrderSiderbar/>
+                
                 <main className="md:flex-1 md:h-screen md:overflow-y-scroll p-5">
                     {children}
                 </main>
 
                 <OrderSummary/>
             </div>
-        
-        
         </>
     )
 }
