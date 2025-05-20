@@ -16,3 +16,14 @@ Routing Dinamico
         Ejp: 
             folder father = products
             folder child = [id] => esta carpeta seria el segmento dinamico de la ruta "products"
+
+Server Accions
+    Las Servs Accions son funciones asincronicas que se ejecutan en el servidor!
+        por ende se utilizan con la directiva "use server"
+    se usan para crear datos, mutarlos de la db, uso de crud en la db
+    Se pueden ocupar en un componente de cliente pero solo importando la funcion ya creada. 
+    Esto significa que, por ejemplo, desde un formulario en el navegador, se puede llamar a una función del servidor para mutar datos, realizar lógica de backend o consultar APIs externas sin tener que construir una API REST tradicional
+
+    Para utilizarlos deben estar dentro del atributo action={} de un form,
+        se los puede llamar desde dentro de un useEfect o al presionar un boton.
+    
