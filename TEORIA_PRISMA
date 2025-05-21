@@ -12,3 +12,5 @@
 
     Prisma soporta:
     MariaDB - SQL -MySQL -PostgreSQL -MongoDB
+
+    Caracteristica Importante: Prisma al generar las tablas ya te genera types. //mejorar este concepto

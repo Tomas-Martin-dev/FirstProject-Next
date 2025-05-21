@@ -27,3 +27,6 @@ Server Accions
     Para utilizarlos deben estar dentro del atributo action={} de un form,
         se los puede llamar desde dentro de un useEfect o al presionar un boton.
     
+Revalidacion de Datos
+    Es basicamente actulizar la data que se muestra, por ejemplo cuando eliminamos algo de la db que estamos iterando, tenemos que raevlidar la data 
+        para que se actulice en pantalla

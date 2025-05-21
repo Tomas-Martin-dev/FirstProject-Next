@@ -1,6 +1,7 @@
 import React from 'react'
 import { prisma } from '@/src/lib/prisma';
 import CategoryIcon from '../ui/CategoryIcon';
+import Logo from '../ui/Logo';
 
 
 async function getCategories() {
@@ -13,9 +14,13 @@ export default async function OrderSiderbar() {
 
   return (
     <aside className='md:w-72 md:h-screen bg-white'>
-      {categories.map(cat => (
-        <CategoryIcon key={cat.id} category={cat}/>
-      ))}
+      <Logo/>
+      
+      <nav className='mt-10'>
+        {categories.map(cat => (
+          <CategoryIcon key={cat.id} category={cat}/>
+        ))}
+      </nav>
     </aside>
   )
 }
