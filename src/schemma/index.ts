@@ -11,3 +11,7 @@ export const OrderSchemma = z.object({
         subtotal: z.number(),
     }))
 })
+
+export const SearchSchemma = z.object({
+    search: z.string().trim().min(1, {message: "La busqueda no puede ir vacia"})
+})
