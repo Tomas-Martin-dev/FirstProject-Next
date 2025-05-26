@@ -22,7 +22,8 @@ export default async function page({ params }: { params: Promise<{ category: str
       <Heading>
         Elige y personaliza tu pedido
       </Heading>
-      <div className="grid grid-cols-1 px-12 sm:px-28 md:px-0 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-start">
+
+      <div className="grid grid-cols-1 px-12 sm:px-28 md:px-10 lg:px-0 md:grid-cols-2 2xl:grid-cols-3 gap-4 items-start">
         {products.map ( prd => (
           <ProductCard
             key={prd.id}

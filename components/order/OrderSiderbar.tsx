@@ -13,7 +13,7 @@ export default async function OrderSiderbar() {
   const categories = await getCategories()
 
   return (
-    <aside className='md:w-72 md:h-screen bg-white'>
+    <aside className='lg:w-72 lg:h-screen bg-white'>
       <Logo/>
       
       <nav className='mt-10'>

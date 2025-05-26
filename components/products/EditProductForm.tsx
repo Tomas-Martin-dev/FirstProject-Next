@@ -1,13 +1,11 @@
 "use client"
-import React, { useRef } from "react";
 import { formProduct } from "@/src/schemma";
 import { toast } from "react-toastify";
-import { crateProduct } from "@/actions/create-product-action"
 import { useRouter } from "next/navigation";
+import { updateProduct } from "@/actions/update-product-action";
 
-export default function AddProductForm({children}: {children: React.ReactNode}) {
+export default function EditProductForm({children, id}: {children: React.ReactNode, id: number}) {
     const router = useRouter();
-    const formRef = useRef<HTMLFormElement>(null); // se supone que previene que se resete el form
 
     const handleSubmit = async (fomrData: FormData) => {
         const data = {
@@ -23,21 +21,21 @@ export default function AddProductForm({children}: {children: React.ReactNode}) 
             })
             return
         }
-        const response = await crateProduct(result.data);
+        const response = await updateProduct(result.data, id)
         if (response?.errors) {
             response.errors.forEach(error => {
                 toast.error(error.message)
             })
             return
         }
-        toast.success("¡Producto Creado!");
+        toast.success("Producto Actualizado!");
         router.push("/admin/products");
     }
+ 
 
     return (
         <div className="bg-white mt-10 px-5 py-10 rounded-md shadow-md max-w-3xl mx-auto">
             <form
-                ref={formRef}
                 action={handleSubmit}
                 className="space-y-5"
             >
@@ -45,8 +43,8 @@ export default function AddProductForm({children}: {children: React.ReactNode}) 
 
                 <input
                     type="submit"
-                    value="Registrar Producto"
-                    className="bg-indigo-600 hover:bg-indigo-700 text-white w-full mt-5 p-3 uppercase font-medium cursor-pointer"
+                    value="Guardar Cambios"
+                    className="bg-indigo-600 hover:bg-indigo-700 text-white w-full mt-5 p-3 uppercase font-medium cursor-pointer transition"
                 />
 
             </form>
