@@ -38,9 +38,9 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
                 Resultado de busqueda: {search}
             </Heading>
 
-            <div className="flex flex-col gap-5 lg:flex-row lg:justify-end">
-                <ProductSearch />
+            <div className="flex flex-col gap-5 lg:flex-row justify-between items-center">
                 <GoBackButton/>
+                <ProductSearch />
             </div>
 
             {products.length ? (<ProductTable products={products} />) : (<p>No hay resultados...</p>)}
