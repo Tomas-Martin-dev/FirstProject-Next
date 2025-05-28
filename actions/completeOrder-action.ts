@@ -5,8 +5,6 @@ import { revalidatePath } from "next/cache";
 
 export async function completeOrder(formData : FormData) {
     const id = formData.get("order_id")!;
-
-
     try {
         await prisma.order.update({
             where: {
@@ -17,7 +15,7 @@ export async function completeOrder(formData : FormData) {
                 orderReadyAt: new Date(Date.now())
             }
         });
-        revalidatePath("/admin/orders")
+        revalidatePath("/admin/orders") // no funciona porque el cache esta cargado en SWR en este caso
     } catch (error) {
         console.log(error);
     }    

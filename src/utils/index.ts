@@ -1,6 +1,6 @@
 import { Category } from "@prisma/client";
 
-export  function formatCurrency(amunt: number){
+export function formatCurrency(amunt: number) {
     return new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD"
@@ -17,7 +17,15 @@ export function getImagePath(path: string) {
     const cloudinaryBaseUrl = "https://res.cloudinary.com";
     if (path.startsWith(cloudinaryBaseUrl)) {
         return path
-    }else{
+    } else {
         return `/products/${path}.jpg`
     }
+}
+
+export function formatTime(date: string | Date) {
+    if (!date) return '--:--';
+    const dateTypeOf =  new Date(date);;;
+    const hours = dateTypeOf.getHours().toString().padStart(2, '0');
+    const minutes = dateTypeOf.getMinutes().toString().padStart(2, '0');
+    return `${hours}:${minutes}`;
 }
