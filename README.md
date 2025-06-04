@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Sistema de Gestión de Pedidos y Productos
 
-## Getting Started
+Este proyecto es una aplicación web completa desarrollada con **Next.js (App Router)**, **TypeScript** y **Prisma**, enfocada en la administración de productos y gestión de órdenes.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Características Principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Gestión de Productos**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  * Crear, editar, eliminar productos.
+  * Buscar productos por nombre.
+  * Ver productos organizados por categorías.
+  * Paginación para navegación eficiente.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Gestión de Órdenes**:
 
-## Learn More
+  * Crear nuevas órdenes seleccionando productos por categoría.
+  * Ver lista de pedidos activos y completarlos.
+  * Resumen visual de productos en la orden.
 
-To learn more about Next.js, take a look at the following resources:
+* **Interfaz de Administración**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  * Acceso a productos y órdenes restringido mediante rutas protegidas.
+  * Sidebar administrativo para navegación rápida.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Notificaciones y Feedback**:
 
-## Deploy on Vercel
+  * Toasts para operaciones exitosas o errores.
+  * Botones y formularios interactivos bien diseñados.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧱 Tecnologías Utilizadas
+
+* **Next.js (App Router)**: Arquitectura moderna basada en archivos para rutas y layouts.
+* **TypeScript**: Tipado estático para mayor robustez.
+* **Prisma**: ORM para la definición de esquemas y migraciones de base de datos.
+* **Server Actions**: Uso de acciones del lado del servidor para manejar lógica de negocio sin necesidad de endpoints REST.
+* **TailwindCSS** Utilizado para estilos modernos y responsivos.
+
+---
+
+## 📌 Patrones y Buenas Prácticas
+
+* **Separación de responsabilidades**: componentes para UI, acciones para lógica de negocio.
+* **Reutilización**: Formularios como `ProductForm`, `AddProductForm`, y `EditProductForm` para diferentes vistas.
+* **Protección de rutas**: Componente `AdminRoute` restringe el acceso a rutas críticas.
+* Integración con bases de datos mediante Prisma.
+---
+
+¡Gracias por revisar el proyecto! Si quieres puedes crear, editar o eliminar productos para ver su funcionamiento ----- Si haces algo icorrecto la app me informara... ten cuidado.
+
