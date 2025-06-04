@@ -7,7 +7,7 @@ import React from 'react'
 export default function ProductDetails({ item }: { item: OrderItem }) {
     const { decrementar, increase, remove } = useStore();
     return (
-        <div className="shadow space-y-1 p-4 bg-white  border-t border-gray-200 ">
+        <div className="shadow space-y-1 p-4 bg-white rounded border-t border-gray-200 ">
             <div className="space-y-4">
                 <div className="flex justify-between items-start">
                     <p className="text-xl font-bold">{item.name} </p>
@@ -16,7 +16,7 @@ export default function ProductDetails({ item }: { item: OrderItem }) {
                         type="button"
                         onClick={() => {remove(item.id)}}
                     >
-                        <XCircleIcon className="text-red-600 h-8 w-8 cursor-pointer" />
+                        <XCircleIcon className="text-red-600 hover:text-red-700 transition-colors h-8 w-8 cursor-pointer" />
                     </button>
                 </div>
                 
@@ -24,7 +24,7 @@ export default function ProductDetails({ item }: { item: OrderItem }) {
                     {item.price}
                 </p>
 
-                <div className="flex gap-5 px-10 py-2 bg-gray-100 w-fit rounded-lg">
+                <div className="flex gap-5 px-10 py-2 bg-gray-100 w-fit rounded-lg shadow-xs">
                     <button
                         type="button"
                         onClick={() => {decrementar(item.id)}}

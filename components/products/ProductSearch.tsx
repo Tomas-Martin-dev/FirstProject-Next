@@ -23,20 +23,20 @@ export default function ProductSearch() {
   
     return (
     <form 
-        className="flex items-center gap-0.5"
+        className="flex items-center gap-1"
         action={handleSearchForm}
     >
         <input
             type="text"
             placeholder="Buscar Producto" 
             name="search"
-            className="p-2 placeholder-gray-400 w-full bg-white"
+            className="p-2 placeholder-gray-400 w-full bg-white rounded-xs"
         />
 
         <input 
             type="submit" 
             value="Buscar"
-            className="bg-indigo-500 hover:bg-indigo-600 text-white p-2 uppercase cursor-pointer" 
+            className="bg-indigo-500 hover:bg-indigo-600 transition-colors text-white p-2 uppercase cursor-pointer rounded-xs" 
         />
     </form>
   )

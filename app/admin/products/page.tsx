@@ -48,7 +48,7 @@ export default async function page({searchParams}: {searchParams: Promise<{ [key
       <div className="flex flex-col gap-5 lg:flex-row lg:justify-between">
         <Link
           href={"/admin/products/new"}
-          className="bg-amber-400 w-full lg:w-auto text-xl px-10 py-3 text-center font-medium cursor-pointer transition-colors hover:bg-amber-500 shadow-xs"
+          className="bg-amber-400 w-full lg:w-auto text-xl px-10 py-3 text-center font-medium cursor-pointer transition-colors hover:bg-amber-500 shadow-sm rounded"
         >Crear Producto
         </Link>
 

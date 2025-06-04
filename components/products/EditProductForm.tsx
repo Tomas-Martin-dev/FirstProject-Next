@@ -44,7 +44,7 @@ export default function EditProductForm({children, id}: {children: React.ReactNo
                 <input
                     type="submit"
                     value="Guardar Cambios"
-                    className="bg-indigo-600 hover:bg-indigo-700 text-white w-full mt-5 p-3 uppercase font-medium cursor-pointer transition"
+                    className="bg-indigo-600 hover:bg-indigo-700 text-white w-full mt-5 p-3 uppercase font-medium rounded cursor-pointer transition"
                 />
 
             </form>

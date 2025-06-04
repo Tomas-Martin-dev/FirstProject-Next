@@ -7,7 +7,7 @@ export default function ProductCard({product}: {product: Product}) {
   const imagePath = getImagePath(product.image);
   
   return (
-    <div className="border bg-white">
+    <div className="border bg-white rounded-lg overflow-hidden shadow-sm">
         <Image src={imagePath} alt={`Imagen ${product.name}`} width={800} height={400}/>
         
         <div className="p-5 w-full">

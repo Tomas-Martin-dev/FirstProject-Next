@@ -10,7 +10,7 @@ export default function AddProducts({product}: {product: Product}) {
     return (
         <button
             type="button"
-            className="bg-indigo-600 hover:bg-indigo-700 transition-colors text-white w-full mt-5 p-3 uppercase font-medium cursor-pointer"
+            className="bg-indigo-600 hover:bg-indigo-700 rounded transition-colors text-white w-full mt-5 p-3 uppercase font-medium cursor-pointer"
             onClick={()=> addToCard(product)}
         >Agregar
         </button>

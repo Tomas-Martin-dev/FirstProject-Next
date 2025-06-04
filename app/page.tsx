@@ -81,8 +81,8 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="mt-6 p-3 bg-yellow-50 border border-yellow-200 rounded text-sm text-yellow-700">
-              💡 <strong>Tip:</strong> Mantén presionado Ctrl/Cmd mientras haces clic para abrir todas las ventanas rápidamente
+            <div className="mt-6 p-3 text-center bg-yellow-50 border border-yellow-200 rounded text-sm text-yellow-700">
+              💡 <strong>Informacio:</strong> Mantén presionado Ctrl/Cmd mientras haces clic para abrir todas las ventanas rápidamente
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function Home() {
               <label className="font-medium uppercase text-sm lg:text-base">Admin</label>
               <input type="text" name="admin" placeholder="Escriba el nombre del administrador" className="border border-gray-200 w-full p-2" />
             </div>
-            <input type="submit" className="px-8 py-4 bg-amber-400 hover:bg-amber-500 cursor-pointer transition-colors font-medium text-lg w-full" value={"Comenzar"}></input>
+            <input type="submit" className="px-8 py-4 bg-amber-400 hover:bg-amber-500 rounded cursor-pointer transition-colors font-medium text-lg w-full" value="Comenzar"></input>
           </form>
         </div>
       </div>

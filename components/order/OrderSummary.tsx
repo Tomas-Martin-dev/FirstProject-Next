@@ -71,7 +71,7 @@ export default function OrderSummary() {
         <input 
           type="submit" 
           value="Confirmar Pedido" 
-          className="py-2 rounded uppercase text-white bg-black hover:bg-stone-950 transition-colors w-full text-center cursor-pointer font-semibold"
+          className="py-2 rounded uppercase text-white bg-black hover:bg-stone-900 transition-colors w-full text-center cursor-pointer font-semibold shadow-sm"
         />
       </form>
     </aside>
